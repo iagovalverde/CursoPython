@@ -5,5 +5,5 @@ from math import trunc
 
 numero = float(input('Digite um numero: '))
 numero_inteiro = trunc(numero)
-print(f'O numero Real em Inteiro é: {numero_inteiro}')
+print(f'O numero Real {numero} em Inteiro é: {numero_inteiro}')
 
