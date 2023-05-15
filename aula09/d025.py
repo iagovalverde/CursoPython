@@ -2,8 +2,6 @@
 Crie um programa que leia o nome de uma pessoa e diga se ela tem 'SILVA' no nome
 '''
 
-nome = input('Digite o nome: ')
+nome = input('Digite o nome: ').strip()
 
-palavra = 'SILVA' in nome
-
-print(palavra)
+print('Seu nome tem Silva? {}'.format('SILVA' in nome.upper()))

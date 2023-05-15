@@ -6,14 +6,12 @@ Crie um programa que leia o nome completo de uma pessoa e mostre:
 - Quantas letras tem o primeiro nome
 '''
 
-nome = input('Digite seu nome completo: ')
+nome = input('Digite seu nome completo: ').strip()
 
-nome_maiscula = nome.upper()
-nome_minuscula = nome.lower()
 nomes = nome.split()
 letras = ''.join(nomes)
 
-print(f'Nome em maiuscula - {nome_maiscula}',
-    f'\nNome em minuscula - {nome_minuscula}',
+print(f'Nome em maiuscula - {nome.upper()}',
+    f'\nNome em minuscula - {nome.lower()}',
     f'\nQuantidade de letras - {len(letras)}',
     f'\nQuantidade de letras 1°Nome - {len(nomes[0])}')
